@@ -2,7 +2,7 @@
 Local ChatGPT frontend made using Python3 and tkinter.
 
 ## How to use
-Put you OpenAI API key in `.env` file 
+Put your OpenAI API key in `.env` file 
 ```
 api_key=sk-9kXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
