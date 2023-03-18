@@ -42,6 +42,11 @@ if response.status_code == 200:
     with open("tkcgpt.log", "a") as file:
         file.write(timeStamp)
         file.write(output)
+        file.close()
 
 else:
-    print(f"Malformed/Invalid Response \nStatus Code: {str(response.status_code)}")
+
+    messagebox.showerror("Error",f"Malformed/Invalid Response \nStatus Code: {str(response.status_code)}")
+    with open("tkcgpt.log", "a") as file:
+        file.write(f"Malformed/Invalid Response \nStatus Code: {str(response.status_code)}")
+        file.close()
